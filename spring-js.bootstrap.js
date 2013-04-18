@@ -7,6 +7,7 @@
  * https://raw.github.com/coronadoland/spring-js/master/LICENSE.txt
  *
  * Date: 2013-04-10
+ * $Id:$
  */
 
 !function ($) {
