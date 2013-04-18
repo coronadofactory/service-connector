@@ -1,10 +1,10 @@
 /*!
- * spring-js.bootstrap.js
- * http://github.com/coronadoland
+ * spring-js.service.js
+ * https://github.com/coronadoland
  *
  * Copyright (c) 2011-2013 Jose Antonio Garcia
  * Released under the MIT license
- * https://raw.github.com/coronadoland/ajax-agent/master/LICENSE.txt
+ * https://raw.github.com/coronadoland/spring-js/master/LICENSE.txt
  *
  * Date: 2013-04-10
  */
