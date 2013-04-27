@@ -7,7 +7,6 @@
  * https://raw.github.com/coronadoland/spring-js/master/LICENSE.txt
  *
  * Date: 2013-04-10
- * $Id:$
  */
 
 !function ($) {
@@ -61,6 +60,20 @@
 			}
 
 		};
+		
+		jQuery.fn.senderButton = function(sender, parms) {
+			
+			this.on('click', function(e) {
+				
+				var a = $(this);
+				var id = a.attr('data-id');
+				
+				sender.send(parms.input(id), a);
+				
+			});
+			
+		};
+
 		
 	});
     

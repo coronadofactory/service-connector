@@ -49,7 +49,10 @@
 				    url: url + '/' + data
 				});
 			} else {
+				
+				// To server
 				var contentType = 'application/json;charset=utf8';
+
 				return $.ajax({
 				    contentType: contentType,
 				    data: data?stringfy(data):'{}',
@@ -61,8 +64,8 @@
       
 		};
 
-		var send = function(parms, dataType, data1, callback) {
-			$.when(ajax('POST', dataType, parms.service.url, parms.service.restful, data1), parms.panel.waiter()).then(
+		var send = function(parms, dataType, data1, callback, element) {
+			$.when(ajax('POST', dataType, parms.service.url, parms.service.restful, data1), parms.panel.waiter(element)).then(
 				function(data2) {
 					if (parms.service.property) {
 						callback(data2[0][parms.service.property]);
@@ -71,8 +74,10 @@
 					}
 				}
 			).fail(function(XMLHttpRequest, textStatus, errorThrown) {
-	    		if (parms.panel.fail) parms.panel.fail(XMLHttpRequest, textStatus, errorThrown);
-			}).always(parms.panel.always);
+	    		if (parms.panel.fail) parms.panel.fail(XMLHttpRequest.status, XMLHttpRequest.responseText, XMLHttpRequest, textStatus, errorThrown);
+			}).always(function(){
+				parms.panel.always(element);
+			});
 		};
 		
 		
@@ -127,7 +132,7 @@
 
 				var show = function() {
 					$this.html('');
-					$this.append($.tmpl(template, data));
+					if (data) $this.append($.tmpl(template, data));
 					if (parms.template.shower) parms.template.shower($this);
 					nofirsttime = true;
 				};
@@ -145,6 +150,20 @@
 		jQuery.fn.load = function(parms)         {this.trigger('LOAD',[parms]);};
 		jQuery.fn.loadTemplate = function(parms) {this.trigger('LOADTEMPLATE',[parms]);};
 
+		
+		jQuery.fn.sender = function(parms) {
+			this.on('SEND', function(e, data1, element) {
+				if (parms.service) {
+					send(parms, 'json', data1, function(data2) {
+						if (parms.then) {
+							parms.then(data2, element);
+						}
+					}, element);
+				}
+			});
+		};
+		
+		jQuery.fn.send = function(parms, element) {this.trigger('SEND',[parms, element]);};
 		
 	});
 }(window.jQuery);
