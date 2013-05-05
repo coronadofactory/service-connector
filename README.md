@@ -12,5 +12,6 @@ Service connector pattern implementation for connecting jQuery invocation to and
 * jQuery Templates plugin ([https://github.com/jquery/jquery-tmpl](https://github.com/jquery/jquery-tmpl)) when using `template` parameter in loader function
 
 
+My first repository is dedicated to Felipe (@fmanaya), one of my best teachers.
 
 
