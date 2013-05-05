@@ -1,8 +1,7 @@
-spring-js
+service-connector
 ==========
 
-Ajax connector with Javascript and love to change the world
-
+Service connector pattern implementation for connecting jQuery invocation to and Spring framework services
 
 ## Dependencies
 
