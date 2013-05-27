@@ -1,6 +1,5 @@
 /*!
- * service-connector.bootstrap.js
- * https://github.com/coronadoland
+ * http://software.coronadoland.com/service-connector
  * 
  * Copyright (c) 2011-2013 Jose Antonio Garcia
  * Released under the MIT license
