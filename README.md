@@ -3,6 +3,8 @@ service-connector
 
 Service connector pattern implementation for connecting jQuery invocation to and Spring framework services
 
+My first repository is dedicated to Felipe (@fmanaya), one of my best teachers.
+
 ## Dependencies
 
 * jQuery framework (min v.1.9.1) ([http://jquery.org](http://jquery.org))
@@ -11,8 +13,6 @@ Service connector pattern implementation for connecting jQuery invocation to and
 ## Dependencies (optional)
 * jQuery Templates plugin ([https://github.com/jquery/jquery-tmpl](https://github.com/jquery/jquery-tmpl)) when using `template` parameter in loader function
 
-
-My first repository is dedicated to Felipe (@fmanaya), one of my best teachers.
 
 ## Error management
 
