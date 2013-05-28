@@ -18,10 +18,10 @@ My first repository is dedicated to Felipe (@fmanaya), one of my best teachers.
 
 The followings errors must be controller from javascript area:
 
-* **0** Server not found
-* 400 Bad parameter invoking the service
-* 404 Bad Url invoking the service
-* 500 Internal error
-* 503 The server is not avalible (Service Temporarily Unavailable)
+* **0**: Server not found
+* **400**: Bad parameter invoking the service
+* **404**: Bad Url invoking the service
+* **500**: Internal error
+* **503**: The server is not avalible (Service Temporarily Unavailable)
 
 
