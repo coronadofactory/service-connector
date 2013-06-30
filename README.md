@@ -1,7 +1,7 @@
 service-connector
 ==========
 
-Service connector [pattern][http://www.servicedesignpatterns.com/WebServiceInfrastructures/ServiceConnector] implementation for connecting jQuery invocation to and Spring framework services.
+Service connector [pattern](http://www.servicedesignpatterns.com/WebServiceInfrastructures/ServiceConnector) implementation for connecting jQuery invocation to and Spring framework services.
 
 My first repository is dedicated to Felipe (@fmanaya), one of my best teachers.
 
