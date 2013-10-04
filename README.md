@@ -11,7 +11,7 @@ My first repository is dedicated to Felipe ([https://github.com/fmanaya](https:/
 
 ## Dependencies (optional)
 * Undescore.js ([http://underscorejs.org](http://underscorejs.org)) when using `template` parameter in loader function
-* Twitter Bootstrap ([http://twitter.github.io/bootstrap](http://twitter.github.io/bootstrap)) when using `bootstrap-connector.js`
+* Twitter Bootstrap ([getbootstrap.com](getbootstrap.com)) when using `bootstrap-connector.js`
 
 
 ## Error management
