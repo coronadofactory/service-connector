@@ -11,7 +11,7 @@ My first repository is dedicated to Felipe (@fmanaya), one of my best teachers.
 * Twitter Bootstrap ([http://twitter.github.io/bootstrap](http://twitter.github.io/bootstrap))
 
 ## Dependencies (optional)
-* jQuery Templates plugin ([https://github.com/jquery/jquery-tmpl](https://github.com/jquery/jquery-tmpl)) when using `template` parameter in loader function
+* Undescore.js ([http://underscorejs.org](http://underscorejs.org)) when using `template` parameter in loader function
 
 
 ## Error management
