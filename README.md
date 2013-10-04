@@ -8,10 +8,10 @@ My first repository is dedicated to Felipe (@fmanaya), one of my best teachers.
 ## Dependencies
 
 * jQuery framework (min v.1.9.1) ([http://jquery.org](http://jquery.org))
-* Twitter Bootstrap ([http://twitter.github.io/bootstrap](http://twitter.github.io/bootstrap))
 
 ## Dependencies (optional)
 * Undescore.js ([http://underscorejs.org](http://underscorejs.org)) when using `template` parameter in loader function
+* Twitter Bootstrap ([http://twitter.github.io/bootstrap](http://twitter.github.io/bootstrap)) when using `bootstrap-connector.js`
 
 
 ## Error management
